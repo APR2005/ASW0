@@ -616,6 +616,7 @@ const salesReport = async(req,res)=>{
     console.log("1");
       const productdata = await productModel.find()
       console.log(productdata);
+      
       res.render('salesReport',{products:productdata})
 
   } catch (error) {
